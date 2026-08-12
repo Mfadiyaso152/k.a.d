@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صدقة</title>
+    <meta name="description" content="صدقة عن خالد علي ديب" />
+    
+    <!-- تحميل Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Kufi+Arabic:wght@100..900&family=Reem+Kufi:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+      /* إخفاء شريط التمرير كلياً من المتصفح وكافة المكونات */
+      html, body, *, ::-webkit-scrollbar {
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+      }
+      ::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+      }
+
+      body {
+        font-family: 'Noto Kufi Arabic', sans-serif;
+        background-color: #020617;
+        color: #f8fafc;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+      .font-amiri { font-family: 'Amiri', serif; }
+      .font-reem { font-family: 'Reem Kufi', sans-serif; }
+      .gold-gradient {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+        background: none !important;
+      }
+      .islamic-pattern {
+        background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+        opacity: 0.05;
+      }
+      #root:empty::before {
+        content: "جاري تشغيل النظام... يرجى الانتظار ثواني قليلة";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #ffffff;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
